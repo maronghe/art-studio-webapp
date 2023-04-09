@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>文件上传示例</title>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+			font-family: Arial, sans-serif;
+		}
+
+		.form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #f7f7f7;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+		}
+
+		h1 {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+
+		input[type="file"] {
+			padding: 10px;
+			margin-bottom: 20px;
+			background-color: #fff;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+		}
+
+		button[type="submit"] {
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			transition: background-color 0.2s ease;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>文件上传示例</h1>
+		<form class="form" method="POST" enctype="multipart/form-data" action="http://127.0.0.1:8080/upload">
+			<input type="file" name="file">
+			<button type="submit">上传</button>
+		</form>
+	</div>
+</body>
+</html>
